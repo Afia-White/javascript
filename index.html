@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTBALL-SCOREBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FOOTBALL SCOREBOARD</h1>
+    <h1>BARCA:<span id="barca">0</span></h1>
+    <h1>REAL MADRID:<span id="madrid">0</span></h1>
+    <button class="barca" onclick="barca+=1; document.getElementById('barca').innerHTML=barca";>Barca's Score</button>
+    <button class="madrid" onclick="madrid+=1; document.getElementById('madrid').innerHTML=madrid";>Madrid's Score</button>
+    <button onclick="barca=0; madrid=0; document.getElementById('barca').innerHTML=barca;document.getElementById('madrid').innerHTML=madrid";>Reset</button>
+    <script>
+        let barca=0;
+        let madrid=0;
+    </script>
+</body>
+</html>
